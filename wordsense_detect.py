@@ -46,6 +46,8 @@ class MultiSenDetect(object):
     '''多义词主函数'''
     def collect_concepts(self, wd):
         sens_dict = self.collect_mutilsens(wd)
+        if not sens_dict:
+            return {}
         concept_dict = {}
         concepts_dict = {}
         for sen, link in sens_dict.items():
@@ -54,7 +56,6 @@ class MultiSenDetect(object):
                 concept_dict[concept] = [link]
             else:
                 concept_dict[concept].append(link)
-
         cluster_concept_dict = self.concept_cluster(concept_dict)
 
         for concept, links in cluster_concept_dict.items():
@@ -188,7 +189,6 @@ class MultiSenDetect(object):
             concept_scores_wds[concept] = similarity_wds
         concept_scores_sent = sorted(concept_scores_sent.items(), key=lambda asd:asd[1],reverse=True)
         concept_scores_wds = sorted(concept_scores_wds.items(), key=lambda asd:asd[1],reverse=True)
-
         return concept_scores_sent[:3], concept_scores_wds[:3]
 
 def test():
