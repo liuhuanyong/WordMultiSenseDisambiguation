@@ -12,9 +12,9 @@ MultiSenseDetection, chinese multi-wordsense disambiguation based on online bake
 
 
 # 项目效果
-python wordsense_detect.py,运行中文词语语义消歧脚本.
-1, 指定需要进行词义消歧的词语word
-2, 指定需要极刑词义消歧词语所在的句子
+python wordsense_detect.py,运行中文词语语义消歧脚本.  
+1, 指定需要进行词义消歧的词语word  
+2, 指定需要极刑词义消歧词语所在的句子  
 
 例子:
 
