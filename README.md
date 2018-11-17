@@ -4,12 +4,7 @@ MultiSenseDetection, chinese multi-wordsense disambiguation based on online bake
 
 
 # 项目思路
-
-![image](https://github.com/liuhuanyong/QABasedOnMedicalKnowledgeGraph/blob/master/img/route.png)
-
-
-
-
+![image](https://github.com/liuhuanyong/MultiSenseDetection/blob/master/img/route.png)
 
 # 项目效果
 python wordsense_detect.py,运行中文词语语义消歧脚本.  
