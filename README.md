@@ -1,9 +1,12 @@
 # MultiSenseDetection
 MultiSenseDetection, chinese multi-wordsense disambiguation based on online bake knowledge base and semantic embedding similarity compute,基于百科知识库的中文词语多义项获取与特定句子词语语义消歧. 
 
-
+# 项目介绍
+一词多义是中文信息处理中一个特别常见的现象,经典的"苹果是水果还是公司"问题一直是困扰大家的一个实际问题,本项目将对这一问题进行尝试,提出相应的技术路线,并结合在线百度百科获取义项,经过义项聚类,义项语义表示,语义相似度计算等方式,对特定语句中的词语语义判定进行尝试.  
 
 # 项目思路
+以下是本项目的技术路线图,本项目需要加载预训练词向量,文件太大,没有给出,各位可自行添加.  
+
 ![image](https://github.com/liuhuanyong/MultiSenseDetection/blob/master/img/route.png)
 
 # 项目效果
@@ -57,3 +60,16 @@ python wordsense_detect.py,运行中文词语语义消歧脚本.
     ****************************************************************************************
 
 # 总结
+1,本项目提出并实现了一个依靠在线百科知识库的特定句子下词语语义消歧的方法.  
+2,本项目由于需要在线访问百度百科,执行效率不如访问本地知识库快.  
+3,本路线中有三个核心点,一个是对义项的聚类,二是对义项的语义表示,三是词语上下文与义项语义表示相似度的计算.  
+4,义项的聚类使用的是预训练词向量相似度阈值的方法,进行连续聚类.这个方法可以有更好的方法代替.  
+5,义项的语义表示由其所对应词条中的keywords与description中的描述信息经过关键词提取而来,这个可以尝试从对应的infobox结构化信息进行加强.  
+6,语义相似度的计算用了两种方法,一种是sent_embedding,即词向量做avg后直接cosine相似度,另一种是wds_embedding,做的是jaccard的一类变体相似度做的.这两这两种方法都有改善的空间.  
+7,将百科,HOWNET等语义知识库加入,对第二个核心点进行加强,可能会带来性能的提升. 
+
+any question?  
+请联系我:  
+邮箱:lhy_in_blcu@126.com  
+csdn:https://blog.csdn.net/lhy2014  
+我的自然语言处理项目: https://liuhuanyong.github.io/  
