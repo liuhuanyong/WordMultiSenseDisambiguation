@@ -3,16 +3,9 @@ MultiSenseDetection, chinese multi-wordsense disambiguation based on online bake
 
 
 
-
-
-# 项目结构
-
-
-
-
 # 项目思路
 
-
+![image](https://github.com/liuhuanyong/QABasedOnMedicalKnowledgeGraph/blob/master/img/route.png)
 
 
 
