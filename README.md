@@ -1,5 +1,5 @@
-# MultiSenseDetection
-MultiSenseDetection, chinese multi-wordsense disambiguation based on online bake knowledge base and semantic embedding similarity compute,基于百科知识库的中文词语多义项获取与特定句子词语语义消歧. 
+# WordMultiSenseDisambiguation
+WordMultiSenseDisambiguation, chinese multi-wordsense disambiguation based on online bake knowledge base and semantic embedding similarity compute,基于百科知识库的中文词语多义项获取与特定句子词语语义消歧. 
 
 # 项目介绍
 一词多义是中文信息处理中一个特别常见的现象,经典的"苹果是水果还是公司"问题一直是困扰大家的一个实际问题,本项目将对这一问题进行尝试,提出相应的技术路线,并结合在线百度百科获取义项,经过义项聚类,义项语义表示,语义相似度计算等方式,对特定语句中的词语语义判定进行尝试.  
