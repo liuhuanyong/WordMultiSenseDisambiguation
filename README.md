@@ -68,8 +68,9 @@ python wordsense_detect.py,运行中文词语语义消歧脚本.
 6,语义相似度的计算用了两种方法,一种是sent_embedding,即词向量做avg后直接cosine相似度,另一种是wds_embedding,做的是jaccard的一类变体相似度做的.这两这两种方法都有改善的空间.  
 7,将百科,HOWNET等语义知识库加入,对第二个核心点进行加强,可能会带来性能的提升. 
 
-any question?  
-请联系我:  
+# contact 
+如有自然语言处理、知识图谱、事理图谱、社会计算、语言资源建设等问题或合作，请联系我:  
 邮箱:lhy_in_blcu@126.com  
 csdn:https://blog.csdn.net/lhy2014  
 我的自然语言处理项目: https://liuhuanyong.github.io/  
+刘焕勇，中国科学院软件研究所  
